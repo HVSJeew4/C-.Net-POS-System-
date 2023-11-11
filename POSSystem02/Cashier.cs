@@ -36,7 +36,7 @@ namespace POSSystem02
             double discount = 0;
             dvgCash.Rows.Clear();
             cn.Open();
-            cm=new SqlCommand("Select c.id,c.pcode,c.pdesc,c.price,c.disc,c.total from tbCart As  c Inner Join tbProduct As p on c.pcode*p.pcode where c.transno like @transno and c.status like 'Pending'",cn);
+            cm=new SqlCommand("Select c.id,c.pcode,c.pdesc,c.price,c.qty,c.disc,c.total from tbCart As  c Inner Join tbProduct As p on c.pcode*p.pcode where c.transno like @transno and c.status like 'Pending'",cn);
             cm.Parameters.AddWithValue("@transno",lblTranNo.Text);
             dr=cm.ExecuteReader();
             while(dr.Read()) 
@@ -113,7 +113,7 @@ namespace POSSystem02
             double vatable = sales - vat;
             lblTax.Text = vat.ToString("#,##0.00");
             lblVatable.Text = vatable.ToString("#,##0.00");
-            //lblDisplayTotal.Text = sales.ToString("#,##0.00"); 
+            txtDisplayTotal.Text = sales.ToString("#,##0.00"); 
         }
         private void timer1_Tick_1(object sender, EventArgs e)
         {

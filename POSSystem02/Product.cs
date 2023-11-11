@@ -60,7 +60,7 @@ namespace POSSystem02
                 product.cbBrand.Text = dvgProduct.Rows[e.RowIndex].Cells[4].Value.ToString();
                 product.cbCategory.Text = dvgProduct.Rows[e.RowIndex].Cells[5].Value.ToString();
                 product.txtPrice.Text = dvgProduct.Rows[e.RowIndex].Cells[6].Value.ToString();
-                //product.nudReOrderLevel.Value = int.Parse(dvgProduct.Rows[e.RowIndex].Cells[7].Value.ToString());
+                product.nudReOrderLevel.Value = int.Parse(dvgProduct.Rows[e.RowIndex].Cells[7].Value.ToString());
 
                 product.txtPCode.Enabled = false;
                 product.btnSave.Enabled = false;

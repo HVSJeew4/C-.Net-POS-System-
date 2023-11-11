@@ -36,7 +36,7 @@ namespace POSSystem02
         {
             int i = 0;
             dvgProduct.Rows.Clear();
-            cm = new SqlCommand("SELECT p.pcode, p.barcode, p.pdesc, b.brand, c.category, p.price, p.qyt FROM tbProduct AS p INNER JOIN tbBrand AS b ON b.id = p.bid INNER JOIN tbCategory AS c ON c.id = p.cid WHERE CONCAT(p.pcode, p.pdesc, b.brand, c.category) LIKE '%" + txtSearch.Text + "%'", cn);
+            cm = new SqlCommand("SELECT p.pcode, p.barcode, p.pdesc, b.brand, c.category, p.price, p.qty FROM tbProduct AS p INNER JOIN tbBrand AS b ON b.id = p.bid INNER JOIN tbCategory AS c ON c.id = p.cid WHERE CONCAT(p.pcode, p.pdesc, b.brand, c.category) LIKE '%" + txtSearch.Text + "%'", cn);
             //cm = new SqlCommand("SELECT p.pcode, p.barcode, p.pdesc, b.brand, c.category, p.price, p.recorder FROM tbProduct AS p INNER JOIN tbBrand AS b ON b.id = p.bid INNER JOIN tbCategory AS c ON c.id = p.cid WHERE CONCAT(p,pdesc,b.brand,c.category) LIKE '%'" +txtSearch.Text + "'%'", cn);
             //cm=new SqlCommand("SELECT p.pcode,p.barcode,p.pdesc,b.brand,c.category,p.price,p.recorder FROM tbProduct AS p INNER JOIN thBrand AS b ON b.id - p.bid INNER JOIN thCategory AS c on c.id -p.cid",cn);
             cn.Open();

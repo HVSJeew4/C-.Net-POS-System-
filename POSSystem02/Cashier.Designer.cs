@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogoutCachierForm = new System.Windows.Forms.Button();
             this.btnChangePassword = new System.Windows.Forms.Button();
@@ -68,7 +68,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.lblTranNo = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txtDisplayTotal = new System.Windows.Forms.Label();
             this.dvgCash = new System.Windows.Forms.DataGridView();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -331,7 +331,7 @@
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.lblTranNo);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.txtDisplayTotal);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel5.Location = new System.Drawing.Point(964, 66);
             this.panel5.Name = "panel5";
@@ -494,32 +494,32 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "Transaction No";
             // 
-            // label3
+            // txtDisplayTotal
             // 
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(40)))), ((int)(((byte)(100)))));
-            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(220, 31);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "0.00";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.txtDisplayTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(40)))), ((int)(((byte)(100)))));
+            this.txtDisplayTotal.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtDisplayTotal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDisplayTotal.ForeColor = System.Drawing.Color.White;
+            this.txtDisplayTotal.Location = new System.Drawing.Point(0, 0);
+            this.txtDisplayTotal.Name = "txtDisplayTotal";
+            this.txtDisplayTotal.Size = new System.Drawing.Size(220, 31);
+            this.txtDisplayTotal.TabIndex = 0;
+            this.txtDisplayTotal.Text = "0.00";
+            this.txtDisplayTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // dvgCash
             // 
             this.dvgCash.AllowUserToAddRows = false;
             this.dvgCash.BackgroundColor = System.Drawing.Color.White;
             this.dvgCash.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvgCash.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvgCash.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dvgCash.ColumnHeadersHeight = 30;
             this.dvgCash.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dvgCash.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -577,8 +577,8 @@
             // Column7
             // 
             this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle7;
             this.Column7.HeaderText = "Price";
             this.Column7.Name = "Column7";
             this.Column7.Width = 70;
@@ -586,8 +586,8 @@
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle8;
             this.Column5.HeaderText = "Qty";
             this.Column5.Name = "Column5";
             this.Column5.Width = 62;
@@ -595,8 +595,8 @@
             // Column6
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle9;
             this.Column6.HeaderText = "Discount";
             this.Column6.Name = "Column6";
             this.Column6.Width = 101;
@@ -604,8 +604,8 @@
             // Column8
             // 
             this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column8.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle10;
             this.Column8.HeaderText = "Total";
             this.Column8.Name = "Column8";
             this.Column8.Width = 72;
@@ -671,7 +671,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnLogoutCachierForm;
         private System.Windows.Forms.Button btnChangePassword;
         private System.Windows.Forms.Button btnDailySales;
@@ -687,19 +686,9 @@
         private System.Windows.Forms.PictureBox picClose;
         private System.Windows.Forms.DataGridView dvgCash;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtBarCode;
-        private System.Windows.Forms.Label lblVatable;
-        private System.Windows.Forms.Label lblTax;
-        private System.Windows.Forms.Label lblDiscount;
-        private System.Windows.Forms.Label lblSalesTotal;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lblTimer;
         private System.Windows.Forms.Timer timer1;
         public System.Windows.Forms.Label usernamecash;
@@ -715,5 +704,16 @@
         private System.Windows.Forms.DataGridViewImageColumn ColAdd;
         private System.Windows.Forms.DataGridViewImageColumn ColReduce;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
+        public System.Windows.Forms.Panel panel5;
+        public System.Windows.Forms.Label lblDate;
+        public System.Windows.Forms.Label lblVatable;
+        public System.Windows.Forms.Label lblTax;
+        public System.Windows.Forms.Label lblDiscount;
+        public System.Windows.Forms.Label lblSalesTotal;
+        public System.Windows.Forms.Label label13;
+        public System.Windows.Forms.Label label12;
+        public System.Windows.Forms.Label label11;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.Label txtDisplayTotal;
     }
 }
